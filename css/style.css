@@ -2,6 +2,7 @@
     --width-variable: 300px;
     --height-variable: 450px;
 }
+
 body {
     align-items: center;
     background-color: #ffffff;
@@ -26,6 +27,11 @@ body {
     height: calc(var(--height-variable) + 350px);
 }
 
+input[type="number"] {
+    width: 100px;
+    height: 20px;
+}
+
 #random-btn {
     margin-bottom: 30px;
     border: none;
@@ -48,7 +54,6 @@ body {
     background: rgb(255, 105, 51);
 }
 
-
 .card {
 
     align-items: center;
@@ -65,7 +70,6 @@ body {
     height: var(--height-variable);
 
 }
-
 
 .hearts::before {
     content: "♥";
