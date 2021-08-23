@@ -36,7 +36,7 @@ function randomElements() {
 
 function changeWidth(event) {
     if (event.target.value < 300) {
-        event.target.value = 300;
+        event.target.value = "";
         root.style.setProperty('--width-variable', '300px');
     } else {
         root.style.setProperty('--width-variable', event.target.value + 'px');
@@ -45,7 +45,7 @@ function changeWidth(event) {
 
 function changeHeight(event) {
     if (event.target.value < 450) {
-        event.target.value = 450;
+        event.target.value = "";
         root.style.setProperty('--height-variable', '450px');
     } else {
         root.style.setProperty('--height-variable', event.target.value + 'px');
