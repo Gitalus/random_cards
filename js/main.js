@@ -1,6 +1,7 @@
 
 
 window.onload = function() {
+    const randomBtn = document.getElementById('random-btn');
     const cardElement = document.querySelector('.card');
     const [pinta, numero] = randomElements();
     const numCard = document.createTextNode(numero);
