@@ -1,5 +1,3 @@
-
-
 window.onload = function() {
     const randomBtn = document.getElementById('random-btn');
     generateCard();
@@ -14,7 +12,7 @@ function generateCard() {
     const [pinta, numero] = randomElements();
     cardElement.innerHTML = numero;
     const initialCLass = cardElement.classList[1];
-    if (!initialCLass ) {
+    if (!initialCLass) {
         cardElement.classList.add(pinta);
     } else {
         cardElement.classList.replace(initialCLass, pinta);
