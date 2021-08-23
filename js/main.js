@@ -2,13 +2,23 @@
 
 window.onload = function() {
     const randomBtn = document.getElementById('random-btn');
+    generateCard();
+
+    randomBtn.addEventListener('click', generateCard);
+
+    setInterval(generateCard, 10000);
+}
+
+function generateCard() {
     const cardElement = document.querySelector('.card');
     const [pinta, numero] = randomElements();
-    const numCard = document.createTextNode(numero);
-
-    cardElement.appendChild(numCard);
-    cardElement.classList.add(pinta);
-
+    cardElement.innerHTML = numero;
+    const initialCLass = cardElement.classList[1];
+    if (!initialCLass ) {
+        cardElement.classList.add(pinta);
+    } else {
+        cardElement.classList.replace(initialCLass, pinta);
+    }
 }
 
 function randomElements() {
